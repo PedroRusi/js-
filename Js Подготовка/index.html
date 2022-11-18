@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <p id ='text'>Простое задание по JS</p> 
+<div>
+	<button id="jsstyle"
+	onclick="js_style()">Style</button>
+</div>
+
+
+
+
+<form id="form1" onsubmit="getFormvalue(event)">
+    First name: <input type="text" name="fname" value="David"><br>
+    Last name: <input type="text" name="lname" value="Beckham"><br>
+    <input type="submit" value="Submit">
+    </form>
+    
+
+
+    <p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://learn.javascript.ru"></a></p>
+    <button onclick="getAttributes()">Click here to get  attributes value</button>
+        
+
+
+
+    <table id="sampleTable" border='1'>
+        <tr class="table__row"><td>Row1 cell1</td><td>Row1 cell2</td></tr>
+        <tr class="table__row"><td>Row2 cell1</td><td>Row2 cell2</td></tr>
+        </table><br>
+        <input type="button" onclick="insert_Row()" value="Insert row"> 
+        
+
+
+
+        <table id="myTable" border="1">
+            <tr><td>Row1 cell1</td><td>Row1 cell2</td></tr>
+            <tr><td>Row2 cell1</td><td>Row2 cell2</td></tr>
+            <tr><td>Row3 cell1</td><td>Row3 cell2</td></tr>
+            </table>
+            <form>
+                <input type="button" onclick="changeContent()" value="Change content">
+            </form>
+            
+
+
+            <table id="myTable2" border="1">
+            </table>
+            <form>
+                <input type="button" onclick="createTable()" value="Create the table">
+            </form>
+            
+
+
+            <form>
+                <select id="colorSelect">
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>White</option>
+                    <option>Black</option>
+                </select>
+                <input type="button" onclick="removecolor()" value="Select and Remove">
+            </form>
+
+
+            <form>
+                Select your favorite Color :
+                <select id="mySelect">
+                    <option>Red</option>
+                    <option>Green</option>
+                    <option>Blue</option>
+                    <option>White</option> 	
+                </select>
+                <input type="button" onclick="getOptions()" value="Count and Output all items">
+            </form>
+                
+
+
+            <form id="calculator">
+                <select name="select">
+                    <option value="1">Набросок в Figma</option>
+                    <option value="3">Figma + Frontend</option>
+                    <option value="6">Figma + Frontend + Backend</option>
+                </select>
+                <div class="block__range">
+                    <p>Примерная затрата времени: </p><p id="textRange"><script>setInterval(function() {
+                    let textRange = document.getElementById('textRange')
+                    let inputRange = document.getElementById('inputRange')
+                    textRange.innerText =  + inputRange.value
+                })</script></p>
+                <input type="range" id="inputRange" min="1" max="20">
+                </div>
+            </form>
+                
+<script src="assets/js/script.js"></script>
+</body>
+</html>

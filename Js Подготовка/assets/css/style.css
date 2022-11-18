@@ -1,0 +1,46 @@
+.textHref {
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.textHreflang {
+    color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.textRel {
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.textType {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.textTarget {
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+#sampleTable {
+    background: rgba(60, 60, 60, 0.12);
+    border: 2px solid green;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.table__row {
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.table__row td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.block__range {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    justify-content: space-around;
+}
