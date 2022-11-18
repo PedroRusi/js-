@@ -79,26 +79,62 @@
                     <option>White</option> 	
                 </select>
                 <input type="button" onclick="getOptions()" value="Count and Output all items">
-            </form>
+            </form><br>
                 
 
 
-            <form id="calculator">
-                <select name="select">
-                    <option value="1">Набросок в Figma</option>
-                    <option value="3">Figma + Frontend</option>
-                    <option value="6">Figma + Frontend + Backend</option>
+            <form id="calculator" name="calculator" onsubmit="Calculate(event)">
+                <select name="select" class="cal__select">
+                    <option value="500">Набросок в Figma(от 500руб)</option>
+                    <option value="1500">Figma + Frontend(от 1500руб)</option>
+                    <option value="3000">Figma + Frontend + Backend(от 3000руб)</option>
                 </select>
+                <div class="line"></div>
                 <div class="block__range">
-                    <p>Примерная затрата времени: </p><p id="textRange"><script>setInterval(function() {
-                    let textRange = document.getElementById('textRange')
-                    let inputRange = document.getElementById('inputRange')
-                    textRange.innerText =  + inputRange.value
+                    <p>Примерная сложность секций: </p><p id="textcomplexity"><script>setInterval(function() {
+                    let text = document.getElementById('textcomplexity')
+                    let input = document.getElementById('inputcomplexity')
+                    text.innerText =  + input.value
                 })</script></p>
-                <input type="range" id="inputRange" min="1" max="20">
+                <input type="range" id="inputcomplexity" name="complexity" min="1" max="10">
                 </div>
+                <div class="line"></div>
+                <div class="block__range">
+                    <p>Количество секций: </p><p id="textRange"><script>setInterval(function() {
+                    let text = document.getElementById('textRange')
+                    let input = document.getElementById('inputRange')
+                    text.innerText =  + input.value
+                })</script></p>
+                <input type="range" id="inputRange" name="range" min="1" max="20">
+                </div>
+                <div class="line"></div>
+                <input type="radio" name="radio" id="radioS" value="1">Стажёр<br>
+                <input type="radio" name="radio" id="radioW" value="1.1" checked>Работник<br>
+                <input type="radio" name="radio" id="radioP" value="1.25">Професионал<br>
+                <div class="line"></div>
+                <input type="checkbox" name="check" id="check">
+                <label for="radio">Учитывать НДС (15%)</label>
+                <div class="line"></div>
+                <input type="submit" class="submit" value="Рассчитать" >
             </form>
                 
+
+
+
+            <div class="table__name" id="blockTable">
+                <div class="block__name">
+                    <a href="#" class="first__name">Имя</a>
+                    <a href="#" class="last__name">Фамилия</a>
+                </div>  
+            </div>
+            <form action="" name="table">
+                <input type="text" name="firstname" id=""><br>
+                <input type="text" name="lastname" id=""><br>
+                <button onclick="addTable(event)">Добавить</button>
+            </form>
+            
+            
+            
 <script src="assets/js/script.js"></script>
 </body>
 </html>
